@@ -48,25 +48,30 @@ git push -u origin master
 ## Git Configuration:
 
 ```
+
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 
- <!--- Git can handle this by auto-converting CRLF line endings into LF when you add a file to the index, and vice versa when it checks out code onto your filesystem.
+
+<!--- Git can handle this by auto-converting CRLF line endings into LF when you add a file to the index, 
+ and vice versa when it checks out code onto your filesystem.
  You can turn on this functionality with the core.autocrlf setting. 
-If you’re on a Linux or macOS system that uses LF line endings, then you don’t want Git to automatically convert them when you check out files; however, if a file with 
-CRLF  endings accidentally gets introduced, then you may want Git to fix it.
+ 
+If you’re on a Linux or macOS system that uses LF line endings, then you don’t want Git to automatically
+convert them when you check out files; however, if a file with CRLF  endings accidentally gets introduced,
+then you may want Git to fix it.
+
 If you’re on a Windows machine, set it to true — this converts LF endings into CRLF when you check out code:  --->
 
 $ git config --global core.autocrlf true
 
 
-
 <!--- If you create a ~/.gitignore_global file with these contents:
-
 *~
 .*.swp
 .DS_Store
 --->
+
 
 $ git config --global core.excludesfile ~/.gitignore_global
 
